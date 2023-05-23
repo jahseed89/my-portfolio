@@ -35,12 +35,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            // border: 2px solid #093756;
             border-radius: 10px;
             padding: 2rem .5rem;
             background-color: #fff;
             position: fixed;
             right: 7rem;
+
+
+        
+        
+        
            
 
             span{
@@ -67,6 +71,7 @@
                 }
             }
        }
+       
 
         .menu {
             font-size: 30px;
@@ -133,6 +138,7 @@
                     img {
                         width: 100%;
                         height: 70%;
+                        border-radius: 10px;
                     }
                 }
 
@@ -158,6 +164,7 @@
 
                     img {
                         width: 100%;
+                        border-radius: 10px;
                     }
                 }
                 .btn_holder {
@@ -168,5 +175,21 @@
                 }
             }
         }
+    }
+}
+// ***************** ANIMATIONS************
+.pages-container {
+    animation: growDown 300ms ease-in-out forwards
+        
+}
+@keyframes growDown {
+    0% {
+        transform: scaleX(0)
+    }
+    80% {
+        transform: scaleX(1.1)
+    }
+    100% {
+        transform: scaleX(1)
     }
 }
