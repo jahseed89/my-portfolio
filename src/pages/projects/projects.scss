@@ -128,8 +128,7 @@
                 padding: 3rem 1rem;
                 border-radius: 1rem;
                 border: 2px solid #093756;
-
-
+                text-align: left;
 
                 .roman-nums-imgHolder {
                     width: 80%;
@@ -155,6 +154,7 @@
                 padding: 3rem 1rem;
                 border: 2px solid #093756;
                 border-radius: 1rem;
+                text-align: left;
 
                 .diesGame-imgHolder {
                     width: 80%;
@@ -176,17 +176,56 @@
             }
         }
     }
+
+    .fourth-proj-wrapper {
+        display: flex;
+        gap: 1.5rem;
+
+        .forth-proj-holder {
+            width: 50%;
+            padding: 3rem 1rem;
+            border: 2px solid #093756;
+            border-radius: 1rem;
+            text-align: left;
+
+            .randomUsers-proj-holder {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .fith-proj-holder {
+            width: 50%;
+            padding: 3rem 1rem;
+            border: 2px solid #093756;
+            border-radius: 1rem;
+            text-align: left;
+
+            .phonex-proj-holder {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
 // ***************** ANIMATIONS************
 .pages-container {
-    animation: growDown 300ms ease-in-out forwards
+    animation: growDown 400ms ease-in-out forwards
         
 }
 @keyframes growDown {
     0% {
         transform: scaleX(0)
     }
-    80% {
+    90% {
         transform: scaleX(1.1)
     }
     100% {

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import ibeliveProj from "../../assets/ibelive.png";
-import Button from "../../components/Button";
 import romanNumbers from "../../assets/roman-nums.png";
 import diesGame from "../../assets/dies-game.png";
+import phonex from "../../assets/phonex.png";
+import randomUsers from "../../assets/random-users.png";
 import { GrMenu } from "react-icons/gr";
 import { CgClose } from "react-icons/cg";
+import Links from "../../components/links/Links";
 import "./projects.scss";
 import { Link } from "react-router-dom";
 import {
@@ -15,20 +17,20 @@ import {
 
 const Projects = () => {
   const [pages, setPages] = useState(false);
-  const [menuIcon, setMenuIcon] = useState(true)
+  const [menuIcon, setMenuIcon] = useState(true);
   const [cancelIcon, setCancelIcon] = useState(false);
 
-
   const showCancelIconAndPages = () => {
-    setMenuIcon(prev => !prev)
-    setCancelIcon(prev => !prev)
-    setPages(prev => !prev)
-  }
+    setMenuIcon((prev) => !prev);
+    setCancelIcon((prev) => !prev);
+    setPages((prev) => !prev);
+  };
   const showMenuBar = () => {
-    setCancelIcon()
-    setMenuIcon(true)
-    setPages(false)
-  }
+    setCancelIcon();
+    setMenuIcon(true);
+    setPages(false);
+  };
+
   return (
     <div className="projects-page">
       {/* <nav>
@@ -70,8 +72,8 @@ const Projects = () => {
         <div className="menuBar-holder">
           {menuIcon && (
             <span onClick={showCancelIconAndPages}>
-            <GrMenu className="menu" />
-          </span>
+              <GrMenu className="menu" />
+            </span>
           )}
           {cancelIcon && (
             <span onClick={showMenuBar}>
@@ -82,9 +84,15 @@ const Projects = () => {
 
         {pages && (
           <div className="pages-container">
-            <span><Link to={`/${HOME_ROUTE}`}>Home</Link></span>
-            <span><Link to={`/${ABOUT_ROUTE}`}>About Me</Link></span>
-            <span><Link to={`/${CONTACT_ROUTE}`}>Contact Me</Link></span>
+            <span>
+              <Link to={`/${HOME_ROUTE}`}>Home</Link>
+            </span>
+            <span>
+              <Link to={`/${ABOUT_ROUTE}`}>About Me</Link>
+            </span>
+            <span>
+              <Link to={`/${CONTACT_ROUTE}`}>Contact Me</Link>
+            </span>
           </div>
         )}
       </nav>
@@ -105,8 +113,7 @@ const Projects = () => {
               talents and become a global star.
             </p>
             <div className="btn_holder">
-              <Button btnTxt="View Website" />
-              {/* <Button btnTxt="View Case Study" /> */}
+              <Links text="View Website" url="https://ibelieve.netlify.app/home" />
             </div>
           </div>
         </div>
@@ -114,17 +121,11 @@ const Projects = () => {
           <div className="second-proj">
             <h2>Making learning and teaching easy</h2>
             <p>
-              {/* This project was build while I encounter roman figuers challenges.
-              This busted me in coming up with the implementation where
-              stuedents can easily access this application by entering any
-              number of choise and by clicking on the conveter to print its
-              roman figure */}
-              This Application convert any number A user input and it convert it
-              to a roman figure
+              This Application accept any number A user input and convert it to
+              a roman figure
             </p>
             <div className="btn_holder">
-              <Button btnTxt="View Website" />
-              {/* <Button btnTxt="View Case Study" /> */}
+              <Links text="View Website" url="https://romannumbers.netlify.app/" />
             </div>
             <div className="roman-nums-imgHolder">
               <img src={romanNumbers} alt="roman-numbers" />
@@ -137,17 +138,42 @@ const Projects = () => {
               decided to come up with a dies game of fun. Playing programaticaly
             </p>
             <div className="btn_holder">
-              <Button btnTxt="View Website" />
-              {/* <Button btnTxt="View Case Study" /> */}
+              <Links text="View Website" url="https://darling-pegasus-a474c4.netlify.app/" />
             </div>
             <div className="diesGame-imgHolder">
               <img src={diesGame} alt="dies-game" />
             </div>
           </div>
         </div>
-        <div className="thirdProj-wrapper">
-          <div></div>
-          <div></div>
+        <div className="fourth-proj-wrapper">
+          <div className="forth-proj-holder">
+            <h2>Random Users Information</h2>
+            <p>
+              This Application is build on a random user API that generates
+              information about a particular group of applicants
+            </p>
+            <div className="btn_holder">
+              <Links text="View Website" url="https://users-random-card.netlify.app/" />
+            </div>
+            <div className="randomUsers-proj-holder">
+              <img src={randomUsers} alt="random-users" />
+            </div>
+          </div>
+
+          <div className="fith-proj-holder">
+            <h2>The Xcel-Phonie</h2>
+            <p>
+              The Xcel-phonie helps in securing your phone number. It has an
+              input that takes in any phone number and provides the righ network
+              information.
+            </p>
+            <div className="btn_holder">
+              <Links text="View Website" url="https://loquacious-syrniki-bdb8bf.netlify.app/" />
+            </div>
+            <div className="phonex-proj-holder">
+              <img src={phonex} alt="phonex" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
