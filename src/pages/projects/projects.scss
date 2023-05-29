@@ -21,38 +21,22 @@
         margin: 0 auto;
 
         .menuBar-holder {
+            width: 100%;
 
             span {
                 cursor: pointer;
-
             }
 
         }
 
        .pages-container {
-            width: 20%;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            padding: 2rem .5rem;
-            background-color: #fff;
-            position: fixed;
-            right: 7rem;
-
-
-        
-        
-        
-           
 
             span{
                 width: 90%;
                 border-radius: 10px;
                 padding: .5rem;
                 display: flex;
-                margin: .5rem 0;
+                margin: 1.5rem 0;
                 background-image: linear-gradient(to bottom right, #175884, #041d2e);
                 box-shadow:  0px 1px 6px #041d2e;
                 cursor: pointer;
@@ -160,7 +144,7 @@
                     width: 80%;
                     display: flex;
                     margin: auto;
-                    margin-top: 3rem;
+                    margin-top: 5rem;
 
                     img {
                         width: 100%;
@@ -207,6 +191,7 @@
 
             .phonex-proj-holder {
                 width: 100%;
+                margin-top: 5rem;
 
                 img {
                     width: 100%;
@@ -217,18 +202,18 @@
     }
 }
 // ***************** ANIMATIONS************
-.pages-container {
-    animation: growDown 400ms ease-in-out forwards
+// .pages-container {
+//     animation: growDown 400ms ease-in-out forwards
         
-}
-@keyframes growDown {
-    0% {
-        transform: scaleX(0)
-    }
-    90% {
-        transform: scaleX(1.1)
-    }
-    100% {
-        transform: scaleX(1)
-    }
-}
+// }
+// @keyframes growDown {
+//     0% {
+//         transform: scaleX(0)
+//     }
+//     90% {
+//         transform: scaleX(1.1)
+//     }
+//     100% {
+//         transform: scaleX(1)
+//     }
+// }
