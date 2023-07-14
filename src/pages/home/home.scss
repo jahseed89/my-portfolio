@@ -5,6 +5,8 @@
         text-align: center;
         margin-top: 3rem;
         color: #041d2e;
+        animation-name: cardzome;
+        animation-duration: 5s;
 
         h1 {
             font-size: 40px;
@@ -26,4 +28,35 @@
         }
     }
 
+   .projectSection-container {
+        margin-top: 3rem;
+
+    h1 {
+        color: #041d2e;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .proj-section {
+        width: 90%;
+        margin: 0 auto;
+
+        .project-holder {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+   }
+
 }
+
+// ********..Animation..************
+@keyframes cardzome {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 100%;
+    }
+  }

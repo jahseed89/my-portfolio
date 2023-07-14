@@ -21,6 +21,7 @@ import romanNum from './roman-nums.png'
 import sass from './sass.png'
 import typscript from './typscript.png'
 import vue from './vue.png'
+import carefinder from './carefinder.png'
 
 export {
     agrifyLogo,
@@ -45,7 +46,8 @@ export {
     romanNum,
     sass,
     typscript,
-    vue
+    vue,
+    carefinder
 }
 
 
