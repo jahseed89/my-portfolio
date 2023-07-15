@@ -22,7 +22,7 @@ import {
   carefinder,
   phonex,
   githubApi,
-  context,
+  context2,
   learning,
 } from "../../assets/index";
 import { useNavigate } from "react-router-dom";
@@ -117,7 +117,7 @@ const Home = () => {
               />
               <BlogCard
                 blogTitle="useContext Hook"
-                blogImg={context}
+                blogImg={context2}
                 description="How to use react context hook"
                 blogLink='Read'
                 blogUrl="https://medium.com/@samson.ocran/using-react-context-f6fea4bb036f"

@@ -7,7 +7,7 @@ const BrandLoader = () => {
     <Circles
       height="150"
       width="150"
-      color="#041d2e"
+      color="#fff"
       ariaLabel="circles-loading"
       wrapperClass="wrapperClass"
       visible={true}

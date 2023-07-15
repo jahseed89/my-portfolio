@@ -2,7 +2,7 @@ import agrifyLogo from './agrify-login.png'
 import agrigy from './agrify.png'
 import bibleQuiz from './bible-quiz.png'
 import bootstrap from './bootstrap.png'
-import contact from './contact.jpg'
+import contact from './contact.png'
 import css from './css.png'
 import diesGame from './dies-game.png'
 import github from './github.png'
@@ -25,6 +25,10 @@ import carefinder from './carefinder.png'
 import context from './context.png'
 import githubApi from './github-api.png'
 import learning from './learning.jpeg'
+import context2 from './context2.png'
+import at from './at.png'
+import call from './call.png'
+import location from './location.png'
 export {
     agrifyLogo,
     agrigy,
@@ -52,7 +56,11 @@ export {
     carefinder,
     context,
     githubApi,
-    learning
+    learning,
+    context2,
+    at,
+    call,
+    location
 }
 
 

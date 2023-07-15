@@ -5,10 +5,12 @@
     cursor: pointer;
     outline: none;
     padding: 1rem 1.5rem .6rem 1.5rem;
-    border-radius: 30px;
-    // border: none;
+    border-radius: 15px;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 
     &:hover {
         color: #093756;

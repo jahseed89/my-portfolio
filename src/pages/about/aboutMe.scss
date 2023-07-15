@@ -4,11 +4,12 @@
   .page-content {
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
+    align-items: center;
+    padding: 2rem 0;
 
     .img-holder {
       border-radius: 100%;
-      width: 30%;
+      width: 25%;
 
       img {
         width: 100%;
@@ -18,7 +19,7 @@
 
     .bio-section {
       width: 50%;
-      margin-top: 5rem;
+      // margin-top: 5rem;
       color: #fff;
 
       h3 {
@@ -34,5 +35,16 @@
         font-size: 24px;
       }
     }
+  }
+
+  .border-line-container {
+    height: 3px;
+    width: 90%;
+    margin:  0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to left, #107BC0, #093756, #fff);
   }
 }
