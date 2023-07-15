@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import AboutMe from "../about/AboutMe";
-import { BrandLoader, ProjectCard, SkillsCard } from "../../components/index";
+import {
+  BlogCard,
+  BrandLoader,
+  Button,
+  ProjectCard,
+  SkillsCard,
+} from "../../components/index";
 import "./home.scss";
 
 import {
@@ -15,16 +21,31 @@ import {
   ibeliev,
   carefinder,
   phonex,
+  githubApi,
+  context,
+  learning,
 } from "../../assets/index";
+import { useNavigate } from "react-router-dom";
+import { PROJECTS_ROUTE } from "../../contents-management/Landing";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
 
+  const navigator = useNavigate();
+
+  function toProjPage() {
+    navigator(`/${PROJECTS_ROUTE}`);
+  }
+
   useEffect(() => {
+    Aos.init({duration: 2000})
+
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
@@ -78,7 +99,33 @@ const Home = () => {
                   linkText="View site"
                 />
               </div>
+              <div className="viewmore-btn">
+                <Button btnTxt="View more" handleClick={toProjPage} />
+              </div>
+            </div>
           </div>
+          <div className="blog">
+            <h1>My Blogs</h1>
+            <div className="blog-wrapper" data-aos='flip-left'>
+              <BlogCard
+                blogTitle="Github API App"
+                blogImg={githubApi}
+                description="Github Users Api fetch"
+                blogLink='Read'
+                blogUrl="https://medium.com/@samson.ocran/github-api-altschool-second-semester-exams-74612148c495"
+                
+              />
+              <BlogCard
+                blogTitle="useContext Hook"
+                blogImg={context}
+                description="How to use react context hook"
+                blogLink='Read'
+                blogUrl="https://medium.com/@samson.ocran/using-react-context-f6fea4bb036f"
+              />
+              <BlogCard blogTitle="Self Building" blogImg={learning} description="Building up one self" 
+              blogLink='Read'
+              blogUrl='https://medium.com/@samson.ocran/self-building-4fe9001dd101' />
+            </div>
           </div>
         </>
       )}

@@ -5,6 +5,7 @@ import PagesModal from "./modal/PagesModal";
 import NavBar from './nav/NavBar'
 import SkillsCard from "./skills/SkillsCard";
 import ProjectCard from "./projects-card/ProjectCard";
+import BlogCard from "./blog/BlogCard";
 
 export {
     BrandLoader,
@@ -13,5 +14,6 @@ export {
     PagesModal,
     NavBar,
     SkillsCard,
-    ProjectCard
+    ProjectCard,
+    BlogCard
 }

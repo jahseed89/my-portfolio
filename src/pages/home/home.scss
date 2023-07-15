@@ -46,8 +46,32 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .viewmore-btn {
+            text-align: end;
+            padding: 1rem 0;
+        }
     }
    }
+
+   .blog {
+    margin-top: 3rem;
+    // background-color: #041d2e;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .blog-wrapper {
+        width: 70%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
 
 }
 

@@ -22,7 +22,9 @@ import sass from './sass.png'
 import typscript from './typscript.png'
 import vue from './vue.png'
 import carefinder from './carefinder.png'
-
+import context from './context.png'
+import githubApi from './github-api.png'
+import learning from './learning.jpeg'
 export {
     agrifyLogo,
     agrigy,
@@ -47,7 +49,10 @@ export {
     sass,
     typscript,
     vue,
-    carefinder
+    carefinder,
+    context,
+    githubApi,
+    learning
 }
 
 

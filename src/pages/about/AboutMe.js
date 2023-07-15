@@ -52,7 +52,7 @@ const AboutMe = () => {
               Junior Software developer, using the latest tools and technologies
               used in frontend development to bring ideas to an accessible,
               human-centered products. I am a quick learner and fast in
-              delivering Projects because I stay focuse on worikng extral hours
+              delivering Projects because I stay focuse on worikng extra hours
               to make sure I have a given project done. I love to learn and
               explore new technologies and passionate about problem solving.
             </p>
