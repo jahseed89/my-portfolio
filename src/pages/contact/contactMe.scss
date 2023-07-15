@@ -10,14 +10,15 @@
 .contact-page {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
+    margin-bottom: 0;
     
 
     .form-holder {
         display: flex;
         gap: 2rem;
-        width: 60%;
+        width: 70%;
         color: #fff;
 
         form {
@@ -38,12 +39,22 @@
                     width: 100%;
                     margin: 1.5rem 0;
 
+                    label {
+                        color: #000;
+                        font-weight: 900;
+                    }
+
                     input {
                         width: 90%;
                         background-color: transparent;
                         border: 2px solid #fff;
                         border-radius: 8px;
-                        padding: .8rem .5rem;
+                        padding: .5rem;
+
+                        &::placeholder {
+                            color: #fff;
+                            font-size: 16px;
+                        }
                     }
                     textarea {
                         width: 90%;
@@ -52,6 +63,11 @@
                         border: 2px solid #fff;
                         border-radius: 8px;
                         padding: .5rem;
+
+                        &::placeholder {
+                            color: #fff;
+                            font-size: 16px;
+                        }
                     }
                 }
 
@@ -96,13 +112,14 @@
                     }
                 }
                 span:nth-child(2) {
-                    color: #093756;
+                    color: #000;
+                    font-size: 20px;
                 }
             }
         }
     }
     .contact-icons {
-        width: 40%;
+        width: 30%;
         img {
             width: 100%;
             background-color: transparent;
@@ -119,8 +136,8 @@
     a {
         text-decoration: none;
         background-color: #fff;
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
         border-radius: 50%;
         display: flex;
         align-items: center;

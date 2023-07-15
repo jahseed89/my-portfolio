@@ -7,24 +7,33 @@
     border-radius: 10px;
     box-shadow: 0 4px 4px #041d2e;
     padding: 1rem;
-    width: 450px;
+    width: 400px;
     color: #fff;
 
     h3 {
         text-align: center;
+        font-size: 24px;
+    }
+
+    img {
+        height: 200px;
     }
 
     p {
         margin-top: .8rem;
+        font-size: 16px;
     }
 
     a {
         text-decoration: none;
         background-color: #041d2e;
-        border-radius: 30px;
+        border-radius: 10px;
         width: fit-content;
         color: #fff;
-        padding: 1rem 3rem .7rem 3rem;
+        // padding: 1rem 3rem .7rem 3rem;
+        padding: .5rem 2rem;
+        padding-top: .8rem;
+        font-size: 14px;
         display: flex;
         align-items: center;
 

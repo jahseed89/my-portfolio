@@ -28,7 +28,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { PROJECTS_ROUTE } from "../../contents-management/Landing";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import ContactMe from "../contact/ContactMe";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -40,7 +41,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    Aos.init({duration: 2000})
+    Aos.init({ duration: 2000 });
 
     setLoading(true);
     setTimeout(() => {
@@ -94,7 +95,7 @@ const Home = () => {
                 <ProjectCard
                   title="Xcel-Phonie"
                   projImg={phonex}
-                  desc="The Xcel-phonie helps in securing your phone number. It has an input that takes in any phone number and provides the righ network information.."
+                  desc="The Xcel-phonie helps in securing your phone number. It has an input that takes in any phone number and provides the righ network information."
                   url="https://loquacious-syrniki-bdb8bf.netlify.app/"
                   linkText="View site"
                 />
@@ -106,26 +107,32 @@ const Home = () => {
           </div>
           <div className="blog">
             <h1>My Blogs</h1>
-            <div className="blog-wrapper" data-aos='flip-left'>
+            <div className="blog-wrapper" data-aos="flip-left">
               <BlogCard
                 blogTitle="Github API App"
                 blogImg={githubApi}
                 description="Github Users Api fetch"
-                blogLink='Read'
+                blogLink="Read"
                 blogUrl="https://medium.com/@samson.ocran/github-api-altschool-second-semester-exams-74612148c495"
-                
               />
               <BlogCard
                 blogTitle="useContext Hook"
                 blogImg={context2}
                 description="How to use react context hook"
-                blogLink='Read'
+                blogLink="Read"
                 blogUrl="https://medium.com/@samson.ocran/using-react-context-f6fea4bb036f"
               />
-              <BlogCard blogTitle="Self Building" blogImg={learning} description="Building up one self" 
-              blogLink='Read'
-              blogUrl='https://medium.com/@samson.ocran/self-building-4fe9001dd101' />
+              <BlogCard
+                blogTitle="Self Building"
+                blogImg={learning}
+                description="Building up one self"
+                blogLink="Read"
+                blogUrl="https://medium.com/@samson.ocran/self-building-4fe9001dd101"
+              />
             </div>
+          </div>
+          <div className="home-footer">
+            <ContactMe />
           </div>
         </>
       )}

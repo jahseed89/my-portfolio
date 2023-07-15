@@ -48,15 +48,15 @@
         }
 
         .viewmore-btn {
-            text-align: end;
             padding: 1rem 0;
+            display: flex;
+            justify-content: flex-end;
         }
     }
    }
 
    .blog {
     margin-top: 3rem;
-    // background-color: #041d2e;
 
     h1 {
         font-size: 40px;
@@ -65,12 +65,16 @@
     }
 
     .blog-wrapper {
-        width: 70%;
+        width: 80%;
         margin: 1rem auto;
         display: flex;
         justify-content: space-between;
 
     }
+}
+
+.home-footer {
+    margin-top: 5rem;
 }
 
 }

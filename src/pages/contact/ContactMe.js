@@ -37,15 +37,15 @@ const ContactMe = () => {
               <div className="inputFild-container">
                 <div>
                   <label>Name</label><br/>
-                  <input type="text" />
+                  <input type="text" placeholder="Enter your name" />
                 </div>
                 <div>
                   <label>Email</label><br/>
-                  <input type="email" />
+                  <input type="email" placeholder="Enter your email" />
                 </div>
                 <div>
                   <label>Message</label><br/>
-                  <textarea type="textarea" name="message" />
+                  <textarea type="textarea" name="message" placeholder="Send a message" />
                 </div>
                 <div>
                   <Button btnTxt="Send" icon={<BsSend />} className="send-btn" />
