@@ -1,28 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { me2 } from "../../assets/index";
-import { BrandLoader, Button } from "../../components/index";
+import { BrandLoader } from "../../components/index";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { useNavigate } from "react-router-dom";
-import { CONTACT_ROUTE } from "../../contents-management/Landing";
 import "./aboutMe.scss";
 
 const AboutMe = () => {
   const [loading, setLoading] = useState(false);
 
-  const navigator = useNavigate();
-  function toContactPage() {
-    navigator(`/${CONTACT_ROUTE}`);
-  }
-
   const [text] = useTypewriter({
     words: [
       "Software Development",
-      // "React js",
-      // "Css/Sass",
-      // "Bootstrap",
-      // "PHP",
-      // "Vue js",
-      // "Typscript",
     ],
     loop: {},
     typeSpeed: 120,
@@ -47,7 +34,7 @@ const AboutMe = () => {
               <img src={me2} alt="avatar" />
             </div>
             <div className="bio-section">
-              <h1>Samson Ocran</h1>
+              <h1>About Me</h1>
               <h3>
                 <span>{text}</span>
                 <span>
@@ -64,11 +51,37 @@ const AboutMe = () => {
                 learn and explore new technologies and passionate about problem
                 solving.
               </p>
-              <div>
-                <Button btnTxt="Contact Me" handleClick={toContactPage} />
+
+              <div className="in-summary">
+                <h3>Summary</h3>
+                <p>
+                  <span>Nickname</span>
+                  <span>Jahseed</span>
+                </p>
+                <p>
+                  <span>Pronouns</span>
+                  <span>He/Him/His</span>
+                </p>
+                <p>
+                  <span>Education</span>
+                  <span>Computer Science of National Deplomah</span>
+                </p>
+                <p>
+                  <span>Myers-briggs</span>
+                  <span>ISFJ</span>
+                </p>
+                <p>
+                  <span>Current Location</span>
+                  <span>Lagos, Nigeria</span>
+                </p>
+                <p>
+                  <span>Interests</span>
+                  <span>Raggae Music, Forieng Movies</span>
+                </p>
               </div>
             </div>
           </div>
+
           <div className="border-line-container"></div>
         </>
       )}

@@ -4,7 +4,6 @@
   .page-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 2rem 0;
 
     .img-holder {
@@ -33,6 +32,23 @@
 
       p{
         font-size: 20px;
+      }
+    }
+
+    .in-summary {
+      margin-top: 4rem;
+
+      p {
+        display: flex;
+        flex-direction: column;
+
+
+        span:nth-child(1) {
+          color: #000;
+        }
+        span:nth-child(2) {
+          font-size: 16px;
+        }
       }
     }
   }

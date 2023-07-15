@@ -1,6 +1,53 @@
 .home-page {
     border: 1px solid transparent;
 
+    .page-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 0;
+    
+        .img-holder {
+          border-radius: 100%;
+          width: 25%;
+    
+          img {
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+    
+        .bio-section {
+          width: 50%;
+          // margin-top: 5rem;
+          color: #fff;
+    
+          h3 {
+            font-weight: bold;
+            color: #093756;
+    
+            span {
+                font-size: 30px;
+            }
+          }
+    
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+    
+      .border-line-container {
+        height: 3px;
+        width: 90%;
+        margin:  0 auto;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to left, #107BC0, #093756, #fff);
+      }
+
     .skills-container {
         text-align: center;
         margin-top: 3rem;
