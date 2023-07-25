@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BrandLoader, Button } from "../../components/index";
 import { at, call, contact, location } from "../../assets/index";
 import { BsSend } from "react-icons/bs";
 import {AiFillGithub} from 'react-icons/ai'
 import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
-
+import emailjs from '@emailjs/browser';
 import './contactMe.scss'
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,20 @@ const ContactMe = () => {
       setLoading(false);
     }, 5000);
   }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <>
       {loading ? (
@@ -26,7 +40,7 @@ const ContactMe = () => {
        <h1 className="header">Contact Me</h1>
          <div className="contact-page">
           <div className="form-holder">
-            <form>
+            <form onSubmit={sendEmail} ref={form}>
               <div className="title-des">
                 <h3>Let's Connect!</h3>
                 <p>
@@ -37,18 +51,18 @@ const ContactMe = () => {
               <div className="inputFild-container">
                 <div>
                   <label>Name</label><br/>
-                  <input type="text" placeholder="Enter your name" />
+                  <input type="text" placeholder="Enter your name" name="user_name" />
                 </div>
                 <div>
                   <label>Email</label><br/>
-                  <input type="email" placeholder="Enter your email" />
+                  <input type="email" placeholder="Enter your email" name="user_email" />
                 </div>
                 <div>
                   <label>Message</label><br/>
                   <textarea type="textarea" name="message" placeholder="Send a message" />
                 </div>
                 <div>
-                  <Button btnTxt="Send" icon={<BsSend />} className="send-btn" />
+                  <Button btnTxt="Send" type="submit" icon={<BsSend />} className="send-btn" />
                 </div>
               </div>
             </form>
