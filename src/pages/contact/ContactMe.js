@@ -5,9 +5,10 @@ import { BsSend } from "react-icons/bs";
 import {AiFillGithub} from 'react-icons/ai'
 import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 import './contactMe.scss'
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
@@ -23,13 +24,42 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_7xq1r2o', 'template_otksvsu', form.current, 'vKj9B_yFaKG7akgyi')
       .then((result) => {
           console.log(result.text);
+          successMsg()
+          form.current.reset()
       }, (error) => {
           console.log(error.text);
+          unSuccessfulMsg()
       });
   };
+
+  const successMsg = () => {
+    setTimeout(() => {
+      toast('Message sent succesfully', {
+        position: "top-center",
+        auth: '5000',
+        style: {
+          background: '#fffff',
+          color: '#093756'
+        }
+      })
+    }, 5000)
+  }
+
+  const unSuccessfulMsg = () => {
+    setTimeout(() => {
+      toast('Sorry Your Message was not sent', {
+        position: "top-center",
+        auth: '5000',
+        style: {
+          background: '#fffff',
+          color: '#093756'
+        }
+      })
+    }, 5000)
+  }
 
   return (
     <>
