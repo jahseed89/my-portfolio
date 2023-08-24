@@ -6,10 +6,19 @@
         justify-content: space-around;
         align-items: center;
         padding: 2rem 0;
+
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
     
         .img-holder {
           border-radius: 100%;
           width: 25%;
+
+          @media (max-width: 900px) {
+            width: 50%;
+            margin-bottom: 1rem;
+          }
     
           img {
             width: 100%;
@@ -19,13 +28,22 @@
     
         .bio-section {
           width: 50%;
-          // margin-top: 5rem;
           color: #fff;
-    
+
+          @media (max-width: 900px) {
+            width: 90%;
+          }
+
+          h1 {
+            @media (max-width: 900px) {
+              text-align: center;
+            }
+          }
+
           h3 {
             font-weight: bold;
             color: #093756;
-    
+
             span {
                 font-size: 30px;
             }
@@ -65,6 +83,10 @@
             margin: 1rem auto;
             background-color: #041d2e;
             padding: 0 1rem;
+
+          @media (max-width: 900px) {
+            width: 90%;
+          }
             
             div {
                 display: flex;
@@ -92,12 +114,17 @@
         .project-holder {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .viewmore-btn {
             padding: 1rem 0;
             display: flex;
             justify-content: flex-end;
+
+            @media (max-width: 900px) {
+              justify-content: center;
+            }
         }
     }
    }
@@ -116,6 +143,10 @@
         margin: 1rem auto;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 900px) {
+          flex-wrap: wrap;
+        }
 
     }
 }
