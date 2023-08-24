@@ -64,3 +64,64 @@
     background-image: linear-gradient(to left, #107BC0, #093756, #fff);
   }
 }
+
+// .layout-column {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .layout-row {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+// }
+
+// .mt-50 {
+//   margin-top: 50px;
+// }
+
+// .mr-10 {
+//   margin-right: 10px;
+// }
+
+// .card {
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   padding: 20px;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }
+
+// .table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
+
+// .table-header {
+//   background-color: #f0f0f0;
+//   padding: 10px;
+//   text-align: left;
+//   font-weight: bold;
+// }
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.small {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.small:hover {
+  background-color: #e0e0e0;
+}

@@ -4,14 +4,18 @@
     border: 2px solid #fff;
     cursor: pointer;
     outline: none;
-    padding: .3rem 1rem;
-    padding-top: .6rem;
+    // padding: .3rem 1rem;
+    // padding-top: .6rem;
+    padding: .5rem 1.3rem;
+    padding-top: 1rem;
     border-radius: 12px;
-    text-align: center;
-    font-size: 18px;
+    // text-align: center;
+    
+    font-size: 14px;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    justify-content: center;
+    // gap: .5rem;
 
     &:hover {
         color: #093756;

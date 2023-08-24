@@ -3,7 +3,6 @@ nav {
     color: #fff;
     border-bottom: 3px solid #fff;
     padding: .2rem 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +21,10 @@ nav {
         justify-content: space-around;
         text-align: center;
         margin-top: 1rem;
+
+        @media (max-width: 900px) {
+            width: 90%;
+        }
         li {
             list-style: none;
             margin: auto 0;
