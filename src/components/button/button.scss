@@ -12,11 +12,6 @@
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 900px) {
-        padding: 1rem 2.5rem;
-        padding-top: 1.5rem;
-    }
-
     &:hover {
         color: #093756;
         background-color: #93d0f6;

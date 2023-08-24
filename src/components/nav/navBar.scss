@@ -7,6 +7,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 900px) {
+        justify-content: unset !important;
+    }
+
     a {
         text-decoration: none;
         padding-left: .5rem;
@@ -23,7 +27,7 @@ nav {
         margin-top: 1rem;
 
         @media (max-width: 900px) {
-            width: 90%;
+            width: 95%;
         }
         li {
             list-style: none;
