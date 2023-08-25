@@ -6,10 +6,18 @@
     justify-content: space-around;
     padding: 2rem 0;
 
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
     .img-holder {
       border-radius: 100%;
       width: 25%;
 
+      @media (max-width: 900px) {
+        width: 50%;
+        margin: 1rem auto;
+      }
       img {
         width: 100%;
         border-radius: 100%;
@@ -18,20 +26,42 @@
 
     .bio-section {
       width: 50%;
-      // margin-top: 5rem;
       color: #fff;
+
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+
+      h1 {
+        @media (max-width: 900px) {
+          font-size: 20px;
+        }
+      }
 
       h3 {
         font-weight: bold;
         color: #093756;
 
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+
         span {
             font-size: 30px;
+
+            @media (max-width: 900px) {
+              font-size: 16px;
+            }
         }
       }
 
       p{
         font-size: 20px;
+
+        @media (max-width: 900px) {
+          font-size: 16px;
+          text-align: justify;
+        }
       }
     }
 
