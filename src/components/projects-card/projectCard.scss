@@ -18,15 +18,27 @@
     h3 {
         text-align: center;
         font-size: 24px;
+
+        @media (max-width: 900px) {
+            font-size: 16px;
+        }
     }
 
     img {
         height: 200px;
+
+        @media (max-width: 900px) {
+            height: 120px;
+        }
     }
 
     p {
         margin-top: .8rem;
         font-size: 16px;
+
+        @media (max-width: 900px) {
+            font-size: 12px;
+        }
     }
 
     a {
@@ -35,7 +47,6 @@
         border-radius: 10px;
         width: fit-content;
         color: #fff;
-        // padding: 1rem 3rem .7rem 3rem;
         padding: .5rem 2rem;
         padding-top: .8rem;
         font-size: 14px;
