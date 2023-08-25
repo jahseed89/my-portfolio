@@ -81,7 +81,6 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-
           <div className="border-line-container"></div>
         </>
       )}
