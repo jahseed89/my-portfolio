@@ -4,11 +4,12 @@ import { at, call, contact, location } from "../../assets/index";
 import { BsSend } from "react-icons/bs";
 import {AiFillGithub} from 'react-icons/ai'
 import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
+// import { useFormik } from "formik";
 import {SiGmail} from 'react-icons/si'
 import emailjs from '@emailjs/browser'
-import './contactMe.scss'
 import { Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
+import './contactMe.scss'
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
@@ -20,6 +21,13 @@ const ContactMe = () => {
   }, []);
 
   const form = useRef();
+
+  // const formik = useFormik({
+  //   initialValue: {
+  //     email: "",
+  //     name: ""
+  //   }
+  // }) 
 
   const sendEmail = (e) => {
     e.preventDefault();

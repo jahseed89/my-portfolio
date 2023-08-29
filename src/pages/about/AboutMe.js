@@ -89,8 +89,6 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-// import React, { useState } from "react";
-// import './aboutMe.scss'
 
 // function TransactionTable({ txns }) {
 //   const [dateSelected, setDateSelected] = useState("2019-11-29");
