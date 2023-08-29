@@ -86,9 +86,9 @@ const Home = () => {
                 Hello! It's nice having you here, I'm Samson Jahseed Ocran A
                 Junior Software developer, using the latest tools and
                 technologies used in frontend development to bring ideas to an
-                accessible, human-centered products. I am a quick learner and
-                fast in delivering Projects because I stay focuse on worikng
-                extra hours to make sure I have a given project done. I love to
+                accessible, human-centered products. I am a quick learner and also very
+                fast in delivering Projects because I stay focuse adding
+                extra hours to make sure I have a given project to be delivered. I love to
                 learn and explore new technologies and passionate about problem
                 solving.
               </p>
