@@ -28,7 +28,10 @@ import {
   learning,
 } from "../../assets/index";
 import { useNavigate } from "react-router-dom";
-import { CONTACT_ROUTE, PROJECTS_ROUTE } from "../../contents-management/Landing";
+import {
+  CONTACT_ROUTE,
+  PROJECTS_ROUTE,
+} from "../../contents-management/Landing";
 import Aos from "aos";
 import ContactMe from "../contact/ContactMe";
 import "aos/dist/aos.css";
@@ -43,13 +46,11 @@ const Home = () => {
   }
 
   function toContactPage() {
-    navigator(`/${CONTACT_ROUTE}`)
+    navigator(`/${CONTACT_ROUTE}`);
   }
 
   const [text] = useTypewriter({
-    words: [
-      "Software Development",
-    ],
+    words: ["Software Development"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80,
@@ -84,13 +85,24 @@ const Home = () => {
               </h3>
               <p>
                 Hello! It's nice having you here, I'm Samson Jahseed Ocran A
-                Junior Software developer, using the latest tools and
-                technologies used in frontend development to bring ideas to an
-                accessible, human-centered products. I am a quick learner and also very
-                fast in delivering Projects because I stay focuse adding
-                extra hours to make sure I have a given project to be delivered. I love to
-                learn and explore new technologies and passionate about problem
-                solving.
+                Junior frontend developer with a knack for creating stunning
+                user experiences. I am about designing interfaces that not only
+                look great but also provide seamless interactions and an
+                enjoyable user journey. I specialize in building responsive
+                websites that look and fuction flawlessly across all devices and
+                screen sizes. From mobile to desktop, my goal is to ensure that
+                every user has a consistent and optimized experience. I stay
+                up-to-date with the latest frontend frameworks and libraries,
+                such as React, Typscript etc to creat dynamic and interactive
+                web applications. I thrive in collaborative environments,
+                working closely with designers and backend developers to bring
+                concepts to life. Clear communication and teamwork are integral
+                to my process, ensuring that projects are delivered on time and
+                to client satisfaction. I've had the privilege of working on
+                projects that have not only challenged my skills but also
+                allowed me to create impactful solutions. The world of frontend
+                development is always evolving, and I'm committed to continuous
+                learning to stay at the forefront of industry trends.
               </p>
               <div>
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />

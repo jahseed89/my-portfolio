@@ -72,6 +72,16 @@
                         }
                         
                     }
+                    
+                    .error {
+                        color: red;
+                        padding-top: .5rem;
+                        font-size: 14px;
+
+                        @media (max-width: 900px) {
+                            font-size: 10px;
+                        }
+                    }
 
                     textarea {
                         width: 90%;

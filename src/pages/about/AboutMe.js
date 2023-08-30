@@ -42,14 +42,15 @@ const AboutMe = () => {
                 </span>
               </h3>
               <p>
-                Hello! It's nice having you here, I'm Samson Jahseed Ocran A
-                Junior Software developer, using the latest tools and
-                technologies used in frontend development to bring ideas to an
-                accessible, human-centered products. I am a quick learner and
-                fast in delivering Projects because I stay focuse on worikng
-                extra hours to make sure I have a given project done. I love to
-                learn and explore new technologies and passionate about problem
-                solving.
+              Junior frontend developer with a knack for creating stunning
+                user experiences. Specialized in crafting pixel-perfect and
+                responsive web interfaces using mordern frontend technologies
+                like React and more. Proficient in HTML, CSS, and JavaScript,
+                with a keen eye for design and usablility. I'm all about
+                bringing designed interfaces that not only look great but also
+                provide seamless interactions and an enjoyable user jurney.
+                User-centric design is at the heart of my development process,
+                ensuring that every user's experience is smooth and engaging. I specialize in buildi
               </p>
 
               <div className="in-summary">

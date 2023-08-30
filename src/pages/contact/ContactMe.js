@@ -13,6 +13,8 @@ import './contactMe.scss'
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
+  const [validation, setValidation] = useState(true)
+  const [errorMsg, setErrorMsg] = useState()
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -21,13 +23,6 @@ const ContactMe = () => {
   }, []);
 
   const form = useRef();
-
-  // const formik = useFormik({
-  //   initialValue: {
-  //     email: "",
-  //     name: ""
-  //   }
-  // }) 
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,6 +37,16 @@ const ContactMe = () => {
           unSuccessfulMsg()
       });
   };
+
+  const displayErrorMsg = () => {
+    if(!/^\S+@\S+\.\S+$/.test(form.current.user_email.value)) {
+      setValidation(false)
+      setErrorMsg('Please enter a valid email')
+    } else {
+      setValidation(true)
+      setErrorMsg('')
+    }
+  }
 
   const successMsg = () => {
     setTimeout(() => {
@@ -93,7 +98,8 @@ const ContactMe = () => {
                 </div>
                 <div>
                   <label>Email</label><br/>
-                  <input type="email" placeholder="Enter your email" name="user_email" />
+                  <input type="email" placeholder="Enter your email" name="user_email" onBlur={displayErrorMsg} />
+                  {!validation && <p className="error">{errorMsg}</p>}
                 </div>
                 <div>
                   <label>Message</label><br/>
