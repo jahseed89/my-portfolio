@@ -1,17 +1,11 @@
 import React from 'react'
-import { Circles } from 'react-loader-spinner'
 import './brandLoader.scss'
 
 const BrandLoader = () => {
   return (
-    <Circles
-      height="150"
-      width="150"
-      color="#fff"
-      ariaLabel="circles-loading"
-      wrapperClass="wrapperClass"
-      visible={true}
-    />
+    <div className='loader-container'>
+      <div className='loader'></div>
+    </div>
   )
 }
 
