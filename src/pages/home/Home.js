@@ -86,23 +86,20 @@ const Home = () => {
               <p>
                 Hello! It's nice having you here, I'm Samson Jahseed Ocran A
                 Junior frontend developer with a knack for creating stunning
-                user experiences. I am about designing interfaces that not only
-                look great but also provide seamless interactions and an
-                enjoyable user journey. I specialize in building responsive
-                websites that look and fuction flawlessly across all devices and
-                screen sizes. From mobile to desktop, my goal is to ensure that
-                every user has a consistent and optimized experience. I stay
+                user experiences. I specialize in building responsive websites
+                that look and fuction flawlessly across all devices and screen
+                sizes. From mobile to desktop, my goal is to ensure that every
+                user has a consistent and optimized experience. I stay
                 up-to-date with the latest frontend frameworks and libraries,
                 such as React, Typscript etc to creat dynamic and interactive
-                web applications. I thrive in collaborative environments,
-                working closely with designers and backend developers to bring
-                concepts to life. Clear communication and teamwork are integral
-                to my process, ensuring that projects are delivered on time and
-                to client satisfaction. I've had the privilege of working on
-                projects that have not only challenged my skills but also
-                allowed me to create impactful solutions. The world of frontend
-                development is always evolving, and I'm committed to continuous
-                learning to stay at the forefront of industry trends.
+                web applications. I also collaborative in working closely with
+                designers and backend developers to bring concepts to life.
+                Clear communication and teamwork are integral to my process,
+                ensuring that projects are delivered on time and to client
+                satisfaction. I've had the privilege of working on projects that
+                have not only challenged my skills but also allowed me to create
+                impactful solutions. The world of frontend development is always
+                evolving, and I'm committed to continuous.
               </p>
               <div>
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />
