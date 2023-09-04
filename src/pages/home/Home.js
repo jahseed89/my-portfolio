@@ -99,7 +99,7 @@ const Home = () => {
                 satisfaction. I've had the privilege of working on projects that
                 have not only challenged my skills but also allowed me to create
                 impactful solutions. The world of frontend development is always
-                evolving, and I'm committed to continuous.
+                evolving, and I'm committed to continuous learning.
               </p>
               <div>
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />
