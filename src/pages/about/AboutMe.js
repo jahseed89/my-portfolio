@@ -8,9 +8,7 @@ const AboutMe = () => {
   const [loading, setLoading] = useState(false);
 
   const [text] = useTypewriter({
-    words: [
-      "Software Development",
-    ],
+    words: ["Software Development"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 80,
@@ -42,7 +40,7 @@ const AboutMe = () => {
                 </span>
               </h3>
               <p>
-              Junior frontend developer with a knack for creating stunning
+                Junior frontend developer with a knack for creating stunning
                 user experiences. Specialized in crafting pixel-perfect and
                 responsive web interfaces using mordern frontend technologies
                 like React and more. Proficient in HTML, CSS, and JavaScript,
@@ -50,7 +48,18 @@ const AboutMe = () => {
                 bringing designed interfaces that not only look great but also
                 provide seamless interactions and an enjoyable user jurney.
                 User-centric design is at the heart of my development process,
-                ensuring that every user's experience is smooth and engaging. I specialize in buildi
+                ensuring that every user's experience is smooth and engaging.
+                During internships and group projects, I've honed my ability to
+                work collaboratively with designers and back-end developers to
+                bring web applications to life. Effective teamwork is crucial to
+                delivering a seamless user experience. I'm committed to
+                continuous learning in this field. I regularly follow industry
+                blogs, attend webinars, and take online courses to stay
+                up-to-date with the latest trends and best practices in
+                front-end development.I enjoy tackling complex problems and
+                finding innovative solutions. As a junior developer, I'm eager
+                to contribute my problem-solving skills to the team and adapt to
+                new challenges.
               </p>
 
               <div className="in-summary">
