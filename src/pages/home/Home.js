@@ -86,7 +86,7 @@ const Home = () => {
                 </span>
               </h3>
               <p>
-                Hello! It's nice having you here, I'm Samson Jahseed Ocran A
+                Hello! It's nice having you here, I'm Mhiz Shalom A
                 Junior frontend developer with a knack for creating stunning
                 user experiences. I specialize in building responsive websites
                 that look and fuction flawlessly across all devices and screen

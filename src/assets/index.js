@@ -30,6 +30,7 @@ import at from './at.png'
 import call from './call.png'
 import location from './location.png'
 import shalom from './shalom.jpg'
+import shalom2 from './shalom2.jpg'
 export {
     agrifyLogo,
     agrigy,
@@ -62,7 +63,8 @@ export {
     at,
     call,
     location,
-    shalom
+    shalom,
+    shalom2
 }
 
 
