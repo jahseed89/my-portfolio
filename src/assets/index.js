@@ -29,6 +29,7 @@ import context2 from './context2.png'
 import at from './at.png'
 import call from './call.png'
 import location from './location.png'
+import shalom from './shalom.jpg'
 export {
     agrifyLogo,
     agrigy,
@@ -60,7 +61,8 @@ export {
     context2,
     at,
     call,
-    location
+    location,
+    shalom
 }
 
 

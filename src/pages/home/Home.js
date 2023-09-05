@@ -11,7 +11,8 @@ import {
 import "./home.scss";
 
 import {
-  me2,
+  // me2,
+  shalom,
   html,
   css,
   sass,
@@ -73,10 +74,11 @@ const Home = () => {
         <>
           <div className="page-content">
             <div className="img-holder">
-              <img src={me2} alt="avatar" />
+              <img src={shalom} alt="avatar" />
             </div>
             <div className="bio-section">
-              <h1>Samson Ocran</h1>
+              {/* <h1>Samson Ocran</h1> */}
+              <h1>Mhiz Shalom</h1>
               <h3>
                 <span>{text}</span>
                 <span>
