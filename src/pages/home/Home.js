@@ -11,8 +11,7 @@ import {
 import "./home.scss";
 
 import {
-  // me2,
-  shalom,
+  me2,
   html,
   css,
   sass,
@@ -74,11 +73,10 @@ const Home = () => {
         <>
           <div className="page-content">
             <div className="img-holder">
-              <img src={shalom} alt="avatar" />
+              <img src={me2} alt="avatar" />
             </div>
             <div className="bio-section">
-              {/* <h1>Samson Ocran</h1> */}
-              <h1>Mhiz Shalom</h1>
+              <h1>Samson Ocran</h1>
               <h3>
                 <span>{text}</span>
                 <span>
@@ -86,7 +84,7 @@ const Home = () => {
                 </span>
               </h3>
               <p>
-                Hello! It's nice having you here, I'm Mhiz Shalom A
+                Hello! It's nice having you here, I'm Samson Jahseed Ocran A
                 Junior frontend developer with a knack for creating stunning
                 user experiences. I specialize in building responsive websites
                 that look and fuction flawlessly across all devices and screen

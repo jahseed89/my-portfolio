@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { shalom2 } from "../../assets/index";
+import { me4 } from "../../assets/index";
 import { BrandLoader } from "../../components/index";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import "./aboutMe.scss";
@@ -29,7 +29,7 @@ const AboutMe = () => {
         <>
           <div className="page-content">
             <div className="img-holder">
-              <img src={shalom2} alt="avatar" />
+              <img src={me4} alt="avatar" />
             </div>
             <div className="bio-section">
               <h1>About Me</h1>
