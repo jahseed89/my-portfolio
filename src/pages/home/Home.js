@@ -20,12 +20,12 @@ import {
   js,
   typscript,
   vue,
-  ibeliev,
   carefinder,
-  phonex,
   githubApi,
   context2,
   learning,
+  gallery,
+  movies,
 } from "../../assets/index";
 import { useNavigate } from "react-router-dom";
 import {
@@ -129,11 +129,10 @@ const Home = () => {
             <div className="proj-section">
               <div className="project-holder">
                 <ProjectCard
-                  title="Ibeliev"
-                  projImg={ibeliev}
-                  desc="This platform seeks to help propel talented individuals into the world of fame. Are you good at singing, 
-                  dancing or at any cool thing? iBelieve is a platform where you can leverage on your talents and become a global star."
-                  url="https://ibelieve.netlify.app/home"
+                  title="Movie Room"
+                  projImg={movies}
+                  desc="This is a movie app build with TMDB api. Allowing users to search for movie of their choice by the help of filtering"
+                  url="https://mymovies-phi.vercel.app/"
                   linkText="View site"
                 />
                 <ProjectCard
@@ -144,10 +143,10 @@ const Home = () => {
                   linkText="View site"
                 />
                 <ProjectCard
-                  title="Xcel-Phonie"
-                  projImg={phonex}
-                  desc="The Xcel-phonie helps in securing your phone number. It has an input that takes in any phone number and provides the righ network information."
-                  url="https://loquacious-syrniki-bdb8bf.netlify.app/"
+                  title="Image Gallery"
+                  projImg={gallery}
+                  desc="The Image gallery allow users to login to the application of images and also anable the authenticated user to drag and drop images."
+                  url="https://image-gallery-rho-two.vercel.app/"
                   linkText="View site"
                 />
               </div>
