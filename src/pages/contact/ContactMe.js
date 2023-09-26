@@ -4,17 +4,20 @@ import { at, call, contact, location } from "../../assets/index";
 import { BsSend } from "react-icons/bs";
 import {AiFillGithub} from 'react-icons/ai'
 import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
-// import { useFormik } from "formik";
 import {SiGmail} from 'react-icons/si'
 import emailjs from '@emailjs/browser'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import './contactMe.scss'
+import { HOME_ROUTE } from "../../contents-management/Landing";
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
   const [validation, setValidation] = useState(true)
   const [errorMsg, setErrorMsg] = useState()
+
+  const navigator = useNavigate()
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -24,6 +27,10 @@ const ContactMe = () => {
 
   const form = useRef();
 
+  const toHomePage = () => {
+    navigator(`/${HOME_ROUTE}`)
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -31,6 +38,7 @@ const ContactMe = () => {
       .then((result) => {
           console.log(result.text);
           successMsg()
+          toHomePage()
           form.current.reset()
       }, (error) => {
           console.log(error.text);
@@ -50,15 +58,15 @@ const ContactMe = () => {
 
   const successMsg = () => {
     setTimeout(() => {
-      toast('Message sent succesfully', {
+      toast('Message sent successfully', {
         position: "top-center",
-        auth: '5000',
+        duration: 5000,
         style: {
-          background: '#fffff',
+          background: '#ffffff',
           color: '#093756'
         }
-      })
-    }, 5000)
+      });
+    }, 5000);
   }
 
   const unSuccessfulMsg = () => {
