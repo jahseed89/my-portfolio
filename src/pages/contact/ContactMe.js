@@ -7,7 +7,8 @@ import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import emailjs from '@emailjs/browser'
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-hot-toast";
+// import { toast } from "react-hot-toast";
+import toast, {Toaster} from 'react-hot-toast'
 import './contactMe.scss'
 import { HOME_ROUTE } from "../../contents-management/Landing";
 
@@ -31,20 +32,56 @@ const ContactMe = () => {
     navigator(`/${HOME_ROUTE}`)
   }
 
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('service_7xq1r2o', 'template_otksvsu', form.current, 'vKj9B_yFaKG7akgyi')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         setTimeout(() => {
+  //           successMsg()
+  //         }, 5000)
+  //         toHomePage()
+  //         form.current.reset()
+  //     }, (error) => {
+  //         console.log(error.text);
+  //         unSuccessfulMsg()
+  //     });
+  // };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_7xq1r2o', 'template_otksvsu', form.current, 'vKj9B_yFaKG7akgyi')
+  
+    const userEmail = form.current.user_email.value.trim();
+    const userName = form.current.user_name.value.trim();
+  
+    if (!userEmail || !userName) {
+      setErrorMsg('Both email and name are required');
+      setValidation(false);
+      return;
+    }
+  
+    if (!/^\S+@\S+\.\S+$/.test(userEmail)) {
+      setErrorMsg('Please enter a valid email');
+      setValidation(false);
+      return; 
+    }
+    emailjs
+      .sendForm('service_7xq1r2o', 'template_otksvsu', form.current, 'vKj9B_yFaKG7akgyi')
       .then((result) => {
-          console.log(result.text);
-          successMsg()
-          toHomePage()
-          form.current.reset()
-      }, (error) => {
-          console.log(error.text);
-          unSuccessfulMsg()
+        console.log(result.text);
+        setTimeout(() => {
+          successMsg();
+        }, 5000);
+        toHomePage();
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error(error.text);
+        unSuccessfulMsg();
       });
   };
+  
 
   const displayErrorMsg = () => {
     if(!/^\S+@\S+\.\S+$/.test(form.current.user_email.value)) {
@@ -58,27 +95,13 @@ const ContactMe = () => {
 
   const successMsg = () => {
     setTimeout(() => {
-      toast('Message sent successfully', {
-        position: "top-center",
-        duration: 5000,
-        style: {
-          background: '#ffffff',
-          color: '#093756'
-        }
-      });
+      toast.success('Message Sent Successfully')
     }, 5000);
   }
 
   const unSuccessfulMsg = () => {
     setTimeout(() => {
-      toast('Sorry Your Message was not sent', {
-        position: "top-center",
-        auth: '5000',
-        style: {
-          background: '#fffff',
-          color: '#093756'
-        }
-      })
+      toast.error('Sorry your message was not sent')
     }, 5000)
   }
 
@@ -88,6 +111,7 @@ const ContactMe = () => {
         <BrandLoader />
       ) : (
        <>
+       <Toaster />
        <h1 className="header">Contact Me</h1>
          <div className="contact-page">
           <div className="form-holder">
