@@ -7,10 +7,9 @@ import {FaLinkedin, FaTwitter, FaInstagram} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import emailjs from '@emailjs/browser'
 import { Link, useNavigate } from "react-router-dom";
-// import { toast } from "react-hot-toast";
 import toast, {Toaster} from 'react-hot-toast'
-import './contactMe.scss'
 import { HOME_ROUTE } from "../../contents-management/Landing";
+import './contactMe.scss'
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
@@ -31,23 +30,6 @@ const ContactMe = () => {
   const toHomePage = () => {
     navigator(`/${HOME_ROUTE}`)
   }
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_7xq1r2o', 'template_otksvsu', form.current, 'vKj9B_yFaKG7akgyi')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //         setTimeout(() => {
-  //           successMsg()
-  //         }, 5000)
-  //         toHomePage()
-  //         form.current.reset()
-  //     }, (error) => {
-  //         console.log(error.text);
-  //         unSuccessfulMsg()
-  //     });
-  // };
 
   const sendEmail = (e) => {
     e.preventDefault();
