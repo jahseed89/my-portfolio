@@ -69,10 +69,10 @@ const Projects = () => {
 
             />
             <ProjectCard
-              title="Random User App"
+              title="XCEL"
               projImg={phonex}
               desc="The Xcel-phonie helps in securing your phone number. It has an input that takes in any phone number and provides the righ network information."
-              url="https://ibelieve.netlify.app/home"
+              url="https://loquacious-syrniki-bdb8bf.netlify.app"
               linkText="View Site"
 
             />
