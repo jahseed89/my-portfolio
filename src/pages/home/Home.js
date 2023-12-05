@@ -103,7 +103,7 @@ const Home = () => {
               </p>
               <div className="cv__info-container">
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />
-                <Link to='https://docs.google.com/document/d/11CEeJ_wiV5R4v-wJHS2F3lhuxzRawpxfqkxJv9mEHG0/edit' target="_blank" className="cv-link">Get CV</Link>
+                <Link to='https://docs.google.com/document/d/11CEeJ_wiV5R4v-wJHS2F3lhuxzRawpxfqkxJv9mEHG0/edit' target="_blank" className="cv-link">View Resume</Link>
               </div>
             </div>
           </div>
