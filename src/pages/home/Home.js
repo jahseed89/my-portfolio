@@ -27,7 +27,7 @@ import {
   gallery,
   movies,
 } from "../../assets/index";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   CONTACT_ROUTE,
   PROJECTS_ROUTE,
@@ -101,8 +101,9 @@ const Home = () => {
                 impactful solutions. The world of frontend development is always
                 evolving, and I'm committed to continuous learning.
               </p>
-              <div>
+              <div className="cv__info-container">
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />
+                <Link to='https://docs.google.com/document/d/11CEeJ_wiV5R4v-wJHS2F3lhuxzRawpxfqkxJv9mEHG0/edit' target="_blank" className="cv-link">Get CV</Link>
               </div>
             </div>
           </div>

@@ -62,6 +62,35 @@
             text-align: justify;
           }
         }
+        .cv__info-container {
+          display: flex;
+          justify-content: space-between;
+
+          .cv-link {
+            background-color: #093756;
+            color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+            outline: none;
+            padding: .5rem 2rem;
+            padding-top: 1rem;
+            border-radius: 12px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        
+            &:hover {
+                color: #093756;
+                background-color: #93d0f6;
+                border: 2px solid #093756;
+            }
+        }
+
+      }
+      
+       
       }
     
       .border-line-container {

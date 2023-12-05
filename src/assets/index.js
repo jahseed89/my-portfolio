@@ -34,6 +34,7 @@ import shalom2 from './shalom2.jpg'
 import me4 from './me4.jpg'
 import gallery from './gallery.png'
 import movies from './movies.png'
+import cv from './cv.jpeg'
 export {
     agrifyLogo,
     agrigy,
@@ -70,7 +71,8 @@ export {
     shalom2,
     me4,
     gallery,
-    movies
+    movies,
+    cv
 }
 
 
