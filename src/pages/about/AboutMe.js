@@ -40,26 +40,30 @@ const AboutMe = () => {
                 </span>
               </h3>
               <p>
-                Junior frontend developer with a knack for creating stunning
-                user experiences. Specialized in crafting pixel-perfect and
-                responsive web interfaces using mordern frontend technologies
-                like React and more. Proficient in HTML, CSS, and JavaScript,
-                with a keen eye for design and usablility. I'm all about
-                bringing designed interfaces that not only look great but also
-                provide seamless interactions and an enjoyable user jurney.
-                User-centric design is at the heart of my development process,
-                ensuring that every user's experience is smooth and engaging.
-                During internships and group projects, I've honed my ability to
-                work collaboratively with designers and back-end developers to
-                bring web applications to life. Effective teamwork is crucial to
-                delivering a seamless user experience. I'm committed to
-                continuous learning in this field. I regularly follow industry
-                blogs, attend webinars, and take online courses to stay
-                up-to-date with the latest trends and best practices in
-                front-end development.I enjoy tackling complex problems and
-                finding innovative solutions. As a junior developer, I'm eager
-                to contribute my problem-solving skills to the team and adapt to
-                new challenges.
+                As Frontend Developer, I possess a passion for crafting
+                exceptional user experiences. Specializing in the creation of
+                pixel-perfect and responsive web interfaces, I leverage modern
+                frontend technologies, notably React, Typescript, to bring designs to life.
+                Proficient in HTML, CSS, and JavaScript, I combine technical
+                expertise with a keen eye for design and usability. My focus is
+                on delivering interfaces that not only exhibit visual excellence
+                but also ensure seamless interactions and an enjoyable user
+                journey. At the core of my development approach is a commitment
+                to user-centric design, aiming to create experiences that are
+                both smooth and engaging for every user. Throughout internships
+                and collaborative group projects, I have refined my ability to
+                work effectively with designers and backend developers,
+                contributing to the successful realization of web applications.
+                I recognize the significance of teamwork in delivering a
+                cohesive user experience. Committed to continuous learning, I
+                stay abreast of industry trends and best practices in frontend
+                development. Regularly following industry blogs, attending
+                webinars, and undertaking online courses, I am dedicated to
+                remaining current with the ever-evolving landscape of frontend
+                technologies. I thrive on tackling complex problems and am
+                driven to find innovative solutions. As a junior developer, I am
+                enthusiastic about applying my problem-solving skills to
+                contribute to the team's success and adapt to new challenges.
               </p>
 
               <div className="in-summary">
