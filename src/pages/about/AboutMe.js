@@ -40,7 +40,7 @@ const AboutMe = () => {
                 </span>
               </h3>
               <p>
-                As Frontend Developer, I possess a passion for crafting
+                As a Frontend Developer, I possess a passion for crafting
                 exceptional user experiences. Specializing in the creation of
                 pixel-perfect and responsive web interfaces, I leverage modern
                 frontend technologies, notably React, Typescript, to bring designs to life.
