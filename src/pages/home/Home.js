@@ -84,26 +84,33 @@ const Home = () => {
                 </span>
               </h3>
               <p>
-                Hello! It's nice having you here, I'm Samson Jahseed Ocran A
-                Junior frontend developer with a knack for creating stunning
-                user experiences. I specialize in building responsive websites
-                that look and fuction flawlessly across all devices and screen
-                sizes. From mobile to desktop, my goal is to ensure that every
-                user has a consistent and optimized experience. I stay
-                up-to-date with the latest frontend frameworks and libraries,
-                such as React, Typscript etc to creat dynamic and interactive
-                web applications. I also collaborative in working closely with
-                designers and backend developers to bring concepts to life.
-                Clear communication and teamwork are integral to my process,
-                ensuring that projects are delivered on time and to client
-                satisfaction. I've had the privilege of working on projects that
-                have not only challenged my skills but also allowed me to create
-                impactful solutions. The world of frontend development is always
-                evolving, and I'm committed to continuous learning.
+                Greetings! Welcome! I'm Samson Jahseed Ocran, a frontend
+                developer with a passion for crafting captivating user
+                experiences. My expertise lies in constructing responsive
+                websites that seamlessly operate on various devices and screen
+                dimensions, ensuring a consistent and optimized user experience
+                from mobile to desktop. I stay abreast of the latest frontend
+                frameworks and libraries, including React and TypeScript, to
+                build dynamic and interactive web applications. Collaboration is
+                key in my approach, and I work closely with designers and
+                backend developers to bring concepts to fruition. Effective
+                communication and teamwork are integral elements of my process,
+                ensuring timely project delivery and client satisfaction. I've
+                been fortunate to contribute to projects that not only
+                challenged my skills but also allowed me to devise impactful
+                solutions. The ever-evolving landscape of frontend development
+                motivates me to remain dedicated to continuous learning. It's a
+                pleasure to have you here.
               </p>
               <div className="cv__info-container">
                 <Button btnTxt="Contact Me" handleClick={toContactPage} />
-                <Link to='https://docs.google.com/document/d/11CEeJ_wiV5R4v-wJHS2F3lhuxzRawpxfqkxJv9mEHG0/edit' target="_blank" className="cv-link">View Resume</Link>
+                <Link
+                  to="https://docs.google.com/document/d/11CEeJ_wiV5R4v-wJHS2F3lhuxzRawpxfqkxJv9mEHG0/edit"
+                  target="_blank"
+                  className="cv-link"
+                >
+                  View Resume
+                </Link>
               </div>
             </div>
           </div>

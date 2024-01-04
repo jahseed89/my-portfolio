@@ -40,30 +40,33 @@ const AboutMe = () => {
                 </span>
               </h3>
               <p>
-                As a Frontend Developer, I possess a passion for crafting
-                exceptional user experiences. Specializing in the creation of
-                pixel-perfect and responsive web interfaces, I leverage modern
-                frontend technologies, notably React, Typescript, to bring designs to life.
-                Proficient in HTML, CSS, and JavaScript, I combine technical
-                expertise with a keen eye for design and usability. My focus is
-                on delivering interfaces that not only exhibit visual excellence
-                but also ensure seamless interactions and an enjoyable user
-                journey. At the core of my development approach is a commitment
-                to user-centric design, aiming to create experiences that are
-                both smooth and engaging for every user. Throughout internships
-                and collaborative group projects, I have refined my ability to
-                work effectively with designers and backend developers,
-                contributing to the successful realization of web applications.
-                I recognize the significance of teamwork in delivering a
-                cohesive user experience. Committed to continuous learning, I
-                stay abreast of industry trends and best practices in frontend
-                development. Regularly following industry blogs, attending
-                webinars, and undertaking online courses, I am dedicated to
-                remaining current with the ever-evolving landscape of frontend
-                technologies. I thrive on tackling complex problems and am
-                driven to find innovative solutions. As a junior developer, I am
-                enthusiastic about applying my problem-solving skills to
-                contribute to the team's success and adapt to new challenges.
+                In my role as a Frontend Developer, I am driven by a passion for
+                creating exceptional user experiences. My expertise lies in
+                meticulously crafting pixel-perfect and responsive web
+                interfaces, utilizing modern frontend technologies such as React
+                and TypeScript to breathe life into designs. Proficient in HTML,
+                CSS, and JavaScript, I seamlessly blend technical proficiency
+                with a discerning eye for design and usability. I prioritize
+                delivering interfaces that not only showcase visual excellence
+                but also guarantee smooth interactions and an enjoyable user
+                journey. My development approach revolves around a dedication to
+                user-centric design, with the goal of creating experiences that
+                are both seamless and engaging for all users. Through
+                internships and collaborative group projects, I have honed my
+                ability to collaborate effectively with designers and backend
+                developers, contributing to the successful realization of web
+                applications. I recognize the importance of teamwork in
+                delivering a cohesive user experience. Committed to continuous
+                learning, I stay updated on industry trends and best practices
+                in frontend development by regularly following industry blogs,
+                attending webinars, and undertaking online courses. This
+                commitment allows me to remain current with the ever-evolving
+                landscape of frontend technologies. Thriving on tackling complex
+                problems, I am motivated to find innovative solutions. As a
+                junior developer, I am eager to apply my problem-solving skills
+                to contribute to the team's success and adapt to new challenges.
+                I am enthusiastic about the opportunity to make a meaningful
+                impact and contribute to the ongoing success of the team.
               </p>
 
               <div className="in-summary">
