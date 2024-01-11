@@ -58,7 +58,6 @@ const Home = () => {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-
     setLoading(true);
     setTimeout(() => {
       setLoading(false);

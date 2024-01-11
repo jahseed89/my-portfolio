@@ -106,3 +106,63 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+// export const AboutMe = () => {
+//   const [form, setForm] = useState({
+//     firstName: "",
+//     lastName: "",
+//     password: "",
+//     address: "",
+//     zipCode: "",
+//   });
+
+//   const handleChange = (e) => {
+//     setForm({ ...form, [e.target.name]: e.target.value });
+//   };
+//   return (
+//     <form>
+//       <div style={{marginTop: '10%', marginLeft: '20%'}}>
+//         <input
+//           type="text"
+//           name="firstName"
+//           placeholder="first name"
+//           onChange={handleChange}
+//         />
+//         <br />
+//         <br />
+//         <input
+//           type="text"
+//           name="lastName"
+//           placeholder="last name"
+//           onChange={handleChange}
+//         />
+//         <br />
+//         <br />
+//         <input
+//           type="password"
+//           name="password"
+//           placeholder="password"
+//           onChange={handleChange}
+//         />
+//         <br />
+//         <br />
+//         <input
+//           type="text"
+//           name="address"
+//           placeholder="address"
+//           onChange={handleChange}
+//         />
+//         <br />
+//         <br />
+//         <input
+//           type="number"
+//           name="zipCode"
+//           placeholder="zip code"
+//           onChange={handleChange}
+//         />
+//       </div>
+//       <Button btnTxt='Submit' />
+//     </form>
+//   );
+// };
+// export default AboutMe;
