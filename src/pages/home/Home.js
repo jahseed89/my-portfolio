@@ -64,6 +64,7 @@ const Home = () => {
     }, 3000);
   }, []);
 
+
   return (
     <div className="home-page">
       {loading ? (

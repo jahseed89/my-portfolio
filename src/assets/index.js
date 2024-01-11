@@ -35,6 +35,7 @@ import me4 from './me4.jpg'
 import gallery from './gallery.png'
 import movies from './movies.png'
 import cv from './cv.jpeg'
+import errorPage from './404page.jpeg'
 export {
     agrifyLogo,
     agrigy,
@@ -72,7 +73,8 @@ export {
     me4,
     gallery,
     movies,
-    cv
+    cv,
+    errorPage
 }
 
 
