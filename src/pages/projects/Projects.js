@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrandLoader, ProjectCard } from "../../components/index";
+import "./projects.scss";
+
 import {
   agrigy,
   carefinder,
@@ -8,7 +10,6 @@ import {
   phonex,
   romanNum,
 } from "../../assets/index";
-import "./projects.scss";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);
